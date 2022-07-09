@@ -1,5 +1,5 @@
 # Wordle
-Hello! I made this basic Doodle Jump game to get more practice with JavaScript/HTML/CSS/Node. The original project that I used as a guide can be found here 
+Hello! I made this basic Wordle game to get more practice with JavaScript/HTML/CSS/Node. The original project that I used as a guide can be found here 
 https://www.youtube.com/watch?v=mpby4HiElek (thanks Ania!). Working version can be found on my portfolio https://derekprieur.dev/. Below is a list of most of the 
 concepts used:
 
