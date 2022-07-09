@@ -1,0 +1,134 @@
+body {
+    background-color: #121213;
+    color: white;
+    display: flex;
+    height: 950px;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 950px;
+    width: 1200px;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #3a3a3c;
+}
+
+.title {
+    margin-bottom: 0px;
+}
+
+.message-container {
+    border: none;
+    height: 50px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.message {
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #818384;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.tile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 600px;
+    width: 550px;
+}
+
+.tile {
+    height: 88px;
+    width: 88px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    border: white 1px solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+}
+
+.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+
+    50% {
+        transform: rotateX(90deg);
+    }
+
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.key-container {
+    width: 660px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.key {
+    height: 60px;
+    width: 55px;
+    background-color: #818384;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+}
+
+.key-container div:nth-child(20),
+.key-container div:nth-child(28) {
+    width: 90px;
+}
+
+.key-container div:nth-child(11) {
+    margin-left: 45px;
+}
+
+.grey {
+    background-color: #3a3a3c;
+    border: none;
+    /* border: #3a3a3c 1px solid; */
+}
+
+.green {
+    background-color: #538d4e;
+    border: none;
+    /* border: #538d4e 1px solid; */
+}
+
+.yellow {
+    background-color: #b59f3a;
+    border: none;
+    /* border: #b59f3a 1px solid; */
+}
